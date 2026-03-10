@@ -23,7 +23,7 @@ public class OutputEntity<T> {
     private Integer error = 0;
     private T data;
 
-    public OutputEntity<T> succes(Integer code, String message, T data) {
+    public OutputEntity<T> success(Integer code, String message, T data) {
         this.code = HttpStatus.valueOf(code); // Convierte el int a HttpStatus
         this.messages.add(message);
         this.data = data;

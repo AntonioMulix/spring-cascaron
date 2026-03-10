@@ -11,9 +11,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  *
  * @author marco-romero
  */
-public interface LogRepository extends JpaRepository<AdminLog, Long>{
-    
-    
-    
-    
+public interface LogRepository extends JpaRepository<AdminLog, Long> {
+
 }

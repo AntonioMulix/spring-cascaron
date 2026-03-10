@@ -6,7 +6,6 @@ package com.example.cascaron.config;
 
 import com.example.cascaron.entity.AdminLog;
 import com.example.cascaron.service.LogService;
-import com.example.cascaron.service.UsuariosService;
 import jakarta.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
 import java.net.InetAddress;
@@ -23,6 +22,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
+import com.example.cascaron.service.UsuarioService;
 
 /**
  *
@@ -35,7 +35,7 @@ public class PersistenceConfig {
     private static final Logger logger = LoggerFactory.getLogger(PersistenceConfig.class);
 
     @Autowired
-    private UsuariosService usuariosService;
+    private UsuarioService usuariosService;
 
     @Autowired
     private LogService logService;

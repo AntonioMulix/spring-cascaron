@@ -17,6 +17,6 @@ public final class Constantes {
     public static final int USUARIO_ACTIVO = 1;
     public static final int USUARIO_INACTIVO = 2;
 
-    /*Constantes de Respuestas*/
+    /*Constantes de Respuestas para OutputEntity*/
     public static final String USUARIO_INEXISTENTE = "No existe nigun usuario con el nombre ingresado";
 }
